@@ -1,8 +1,0 @@
-{% extends 'base.html' %}
-{% block content %}
-<h1>Top 5 Recent Posts</h1>
-{% for each in posts %}
-      <a href='{{ each.key().id() }}'><h3>{{ each.title }}</h3></a>
-        {{ each.content }}
-  {% endfor %}
-{% endblock %}
